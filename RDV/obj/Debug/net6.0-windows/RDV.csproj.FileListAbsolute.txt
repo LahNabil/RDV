@@ -26,3 +26,5 @@ D:\Edu\Projets\C#\RDV\RDV\obj\Debug\net6.0-windows\refint\RDV.dll
 D:\Edu\Projets\C#\RDV\RDV\obj\Debug\net6.0-windows\RDV.pdb
 D:\Edu\Projets\C#\RDV\RDV\obj\Debug\net6.0-windows\RDV.genruntimeconfig.cache
 D:\Edu\Projets\C#\RDV\RDV\obj\Debug\net6.0-windows\ref\RDV.dll
+D:\Edu\Projets\C#\RDV\RDV\obj\Debug\net6.0-windows\RDV.patient.resources
+D:\Edu\Projets\C#\RDV\RDV\obj\Debug\net6.0-windows\RDV.RendezVous.resources

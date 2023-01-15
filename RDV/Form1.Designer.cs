@@ -43,6 +43,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.parent = new System.Windows.Forms.Panel();
             this.sideBar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,7 +66,7 @@
             this.sideBar.MaximumSize = new System.Drawing.Size(200, 450);
             this.sideBar.MinimumSize = new System.Drawing.Size(73, 450);
             this.sideBar.Name = "sideBar";
-            this.sideBar.Size = new System.Drawing.Size(200, 450);
+            this.sideBar.Size = new System.Drawing.Size(73, 450);
             this.sideBar.TabIndex = 0;
             // 
             // panel1
@@ -122,6 +123,7 @@
             this.button1.Text = "                    Dashboard";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3
             // 
@@ -146,6 +148,7 @@
             this.button2.Text = "                    Patients";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel4
             // 
@@ -170,6 +173,7 @@
             this.button3.Text = "                    Rendez-Vous";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel5
             // 
@@ -200,11 +204,20 @@
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // parent
+            // 
+            this.parent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.parent.Location = new System.Drawing.Point(73, 0);
+            this.parent.Name = "parent";
+            this.parent.Size = new System.Drawing.Size(818, 450);
+            this.parent.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(891, 450);
+            this.Controls.Add(this.parent);
             this.Controls.Add(this.sideBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
@@ -237,5 +250,6 @@
         private Panel panel5;
         private Button button4;
         private System.Windows.Forms.Timer timer1;
+        private Panel parent;
     }
 }

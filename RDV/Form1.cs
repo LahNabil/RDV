@@ -7,6 +7,20 @@ namespace RDV
         {
             InitializeComponent();
         }
+        private void showChildForminPanel(object Form)
+        {
+            if(this.parent.Controls.Count > 0)
+            {
+                this.parent.Controls.RemoveAt(0);
+            }
+
+
+            Form form = Form as Form;
+            form.TopLevel = false;
+            this.parent.Controls.Add(form);
+            form.Show();
+
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -38,6 +52,28 @@ namespace RDV
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             timer1.Start();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            showChildForminPanel(new patient());
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            showChildForminPanel(new RendezVous());
         }
     }
 }
