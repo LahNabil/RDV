@@ -198,6 +198,7 @@
             this.button4.Text = "                    Factures";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // timer1
             // 
@@ -206,11 +207,13 @@
             // 
             // parent
             // 
+            this.parent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(14)))), ((int)(((byte)(73)))));
             this.parent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.parent.Location = new System.Drawing.Point(73, 0);
             this.parent.Name = "parent";
             this.parent.Size = new System.Drawing.Size(818, 450);
             this.parent.TabIndex = 1;
+            this.parent.Paint += new System.Windows.Forms.PaintEventHandler(this.parent_Paint);
             // 
             // Form1
             // 

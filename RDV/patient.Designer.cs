@@ -46,16 +46,17 @@
             this.prenomTF = new System.Windows.Forms.TextBox();
             this.adresseTF = new System.Windows.Forms.TextBox();
             this.telephoneTF = new System.Windows.Forms.TextBox();
-            this.dateTF = new System.Windows.Forms.TextBox();
             this.ajouterB = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.idTF = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // listView1
             // 
+            this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(47)))), ((int)(((byte)(255)))));
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -63,6 +64,7 @@
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6});
+            this.listView1.ForeColor = System.Drawing.SystemColors.Window;
             this.listView1.Location = new System.Drawing.Point(234, 118);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(496, 218);
@@ -117,6 +119,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(283, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(233, 36);
@@ -126,6 +129,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(12, 150);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 15);
@@ -135,6 +139,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(12, 184);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 15);
@@ -144,6 +149,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(12, 211);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 15);
@@ -153,6 +159,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.Location = new System.Drawing.Point(12, 249);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(67, 15);
@@ -162,6 +169,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Location = new System.Drawing.Point(12, 282);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(93, 15);
@@ -195,13 +203,6 @@
             this.telephoneTF.Name = "telephoneTF";
             this.telephoneTF.Size = new System.Drawing.Size(100, 23);
             this.telephoneTF.TabIndex = 11;
-            // 
-            // dateTF
-            // 
-            this.dateTF.Location = new System.Drawing.Point(113, 274);
-            this.dateTF.Name = "dateTF";
-            this.dateTF.Size = new System.Drawing.Size(100, 23);
-            this.dateTF.TabIndex = 12;
             // 
             // ajouterB
             // 
@@ -245,6 +246,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label7.Location = new System.Drawing.Point(558, 380);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(24, 15);
@@ -258,17 +260,27 @@
             this.idTF.Size = new System.Drawing.Size(100, 23);
             this.idTF.TabIndex = 17;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(113, 274);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(100, 23);
+            this.dateTimePicker1.TabIndex = 18;
+            // 
             // patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(14)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.idTF);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.ajouterB);
-            this.Controls.Add(this.dateTF);
             this.Controls.Add(this.telephoneTF);
             this.Controls.Add(this.adresseTF);
             this.Controls.Add(this.prenomTF);
@@ -311,11 +323,11 @@
         private TextBox prenomTF;
         private TextBox adresseTF;
         private TextBox telephoneTF;
-        private TextBox dateTF;
         private Button ajouterB;
         private Button button2;
         private Button button3;
         private Label label7;
         private TextBox idTF;
+        private DateTimePicker dateTimePicker1;
     }
 }

@@ -28,3 +28,6 @@ D:\Edu\Projets\C#\RDV\RDV\obj\Debug\net6.0-windows\RDV.genruntimeconfig.cache
 D:\Edu\Projets\C#\RDV\RDV\obj\Debug\net6.0-windows\ref\RDV.dll
 D:\Edu\Projets\C#\RDV\RDV\obj\Debug\net6.0-windows\RDV.patient.resources
 D:\Edu\Projets\C#\RDV\RDV\obj\Debug\net6.0-windows\RDV.RendezVous.resources
+D:\Edu\Projets\C#\RDV\RDV\obj\Debug\net6.0-windows\RDV.Facture.resources
+D:\Edu\Projets\C#\RDV\RDV\obj\Debug\net6.0-windows\RDV.Dashboard.resources
+D:\Edu\Projets\C#\RDV\RDV\obj\Debug\net6.0-windows\RDV.Login.resources

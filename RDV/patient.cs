@@ -77,7 +77,7 @@ namespace RDV
 
         private void ajouterB_Click(object sender, EventArgs e)
         {
-            MySqlCommand cmd = new MySqlCommand("insert into patient(nom,prenom,adresse,telephone,dateN) values('" + nomTF.Text + "','" + prenomTF.Text + "','" + adresseTF.Text + "','" + telephoneTF.Text + "','"+dateTF.Text+"');", cnx.conn);
+            MySqlCommand cmd = new MySqlCommand("insert into patient(nom,prenom,adresse,telephone,dateN) values('" + nomTF.Text + "','" + prenomTF.Text + "','" + adresseTF.Text + "','" + telephoneTF.Text + "','"+ this.dateTimePicker1.Value.ToString("yyyy/MM/dd") + "');", cnx.conn);
             try
             {
                 if (cnx.conn.State == ConnectionState.Closed)
@@ -103,14 +103,14 @@ namespace RDV
                 prenomTF.Text = listView1.SelectedItems[0].SubItems[2].Text;
                 adresseTF.Text = listView1.SelectedItems[0].SubItems[3].Text;
                 telephoneTF.Text = listView1.SelectedItems[0].SubItems[4].Text;
-                dateTF.Text = listView1.SelectedItems[0].SubItems[5].Text;
+                
 
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MySqlCommand cmd = new MySqlCommand("update patient set nom='" + nomTF.Text + "',prenom='" + prenomTF.Text + "',adresse='" + adresseTF.Text + "',telephone='" + telephoneTF.Text + "' where idP = '" + idTF.Text + "';   ", cnx.conn);
+            MySqlCommand cmd = new MySqlCommand("update patient set nom='" + nomTF.Text + "',prenom='" + prenomTF.Text + "',adresse='" + adresseTF.Text + "',telephone='" + telephoneTF.Text + "',dateN='"+ dateTimePicker1.Text + "' where idP = '" + idTF.Text + "';   ", cnx.conn);
             try
             {
                 if (cnx.conn.State == ConnectionState.Closed)

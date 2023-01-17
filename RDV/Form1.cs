@@ -24,7 +24,7 @@ namespace RDV
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            showChildForminPanel(new Dashboard());
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace RDV
 
         private void button1_Click(object sender, EventArgs e)
         {
-             
+            showChildForminPanel(new Dashboard());
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -75,5 +75,16 @@ namespace RDV
 
             showChildForminPanel(new RendezVous());
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            showChildForminPanel(new Facture());
+        }
+
+        private void parent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+      
     }
 }
